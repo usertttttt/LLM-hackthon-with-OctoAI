@@ -1,9 +1,9 @@
 ## To run the app.py
-export FLASK_APP=app
-export FLASK_ENV=development
+    export FLASK_APP=app
+    export FLASK_ENV=development
 
-Run the app with and open in localhost http://127.0.0.1:5000/
-flask run
+    Run the app with and open in localhost http://127.0.0.1:5000/
+    flask run
 
 ## edit app.py
 ### from:
