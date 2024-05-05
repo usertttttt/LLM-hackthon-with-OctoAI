@@ -1,8 +1,37 @@
-# for desktop set up
+## To run the app.py
+export FLASK_APP=app
+export FLASK_ENV=development
+
+Run the app with and open in localhost http://127.0.0.1:5000/
+flask run
+
+## edit app.py
+### from:
+    ZILLIZ_API_TOKEN = os.environ["ZILLIZ_API_TOKEN"]
+     ZILLIZ_ENDPOINT = os.environ["ZILLIZ_ENDPOINT"]
+
+     vector_store = Milvus.from_documents(
+         splits,
+         embedding=embeddings,
+         connection_args={"uri": ZILLIZ_ENDPOINT, "token": ZILLIZ_API_TOKEN},
+     collection_name="starwars"
+     )
+### to:
+vector_store = Milvus.from_documents(
+    splits,
+    embedding=embeddings,
+    connection_args={"host": "localhost", "port": 19530},
+    collection_name="starwars"
+)
+#### also change "OCTOAI_API_TOKEN" in ".env".
+
+
+
+## for desktop set up
 This version uses Milvus through Docker Compose so you must have Docker installed to run this notebook (Milvus is spun up via docker compose up -d)
-# ! pip install -qU pymilvus langchain sentence-transformers tiktoken octoai-sdk openai
-# ! docker-compose up -d
-# for window set environment
+### ! pip install -qU pymilvus langchain sentence-transformers tiktoken octoai-sdk openai
+### ! docker-compose up -d
+## for window set environment
 For anyone on Windows that is new to running Jupyter notebooks, I highly recommend using WSL. The following are the steps that you need to follow on a clean system to get setup with Python, VS Code, and WSL to run the tutorial.
 
 Enable WSL in windows features
@@ -48,3 +77,9 @@ Attempt to run the first non-commented block in the code
 Install ipykernel when prompted by VS Code
 
 Now you are all set!!!!
+
+## for this project:
+cd aihack/
+source aihackenv/bin/activate
+export OCTOAI_API_TOKEN=
+code .
