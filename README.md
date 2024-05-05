@@ -17,12 +17,12 @@ flask run
      collection_name="starwars"
      )
 ### to:
-vector_store = Milvus.from_documents(
-    splits,
-    embedding=embeddings,
-    connection_args={"host": "localhost", "port": 19530},
-    collection_name="starwars"
-)
+    vector_store = Milvus.from_documents(
+        splits,
+        embedding=embeddings,
+        connection_args={"host": "localhost", "port": 19530},
+        collection_name="starwars"
+    )
 #### also change "OCTOAI_API_TOKEN" in ".env".
 
 
