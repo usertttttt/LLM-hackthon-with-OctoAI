@@ -79,7 +79,7 @@ Install ipykernel when prompted by VS Code
 Now you are all set!!!!
 
 ## for this project:
-cd aihack/
-source aihackenv/bin/activate
-export OCTOAI_API_TOKEN=
-code .
+    cd aihack/
+    source aihackenv/bin/activate
+    export OCTOAI_API_TOKEN=
+    code .
