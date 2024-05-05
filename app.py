@@ -12,7 +12,7 @@ app=Flask(__name__,template_folder='templates')
 @app.route('/')
 def login():
     setup()
-    return render_template('index2.html')
+    return render_template('index.html')
 
 @app.route('/', methods=['POST'])
 def my_form_post():
