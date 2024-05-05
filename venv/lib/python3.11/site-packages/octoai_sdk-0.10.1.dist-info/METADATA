@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: octoai-sdk
+Version: 0.10.1
+Summary: A runtime library for OctoAI.
+Author: OctoML
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: docs
+Provides-Extra: video
+Requires-Dist: av (>=10.0.0,<11.0.0) ; extra == "video"
+Requires-Dist: boto3 (>=1.28.74,<2.0.0)
+Requires-Dist: chevron (>=0.14.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: fastapi (>=0.100.0)
+Requires-Dist: httpx (>=0.24.0,<1.0.0)
+Requires-Dist: imageio (>=2.31.1,<3.0.0) ; extra == "video"
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pillow (>=9.5,<11.0)
+Requires-Dist: pydantic (>=2.1.1,<3.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: python-multipart (>=0.0.6)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: soundfile (>=0.12.1)
+Requires-Dist: sphinx (>=6.2.1,<7.0.0) ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=1.2.1,<2.0.0) ; extra == "docs"
+Requires-Dist: types-pyyaml (>=6.0.12.10,<7.0.0.0)
+Requires-Dist: types-requests (>=2.31.0.2,<3.0.0.0)
+Requires-Dist: uvicorn (>=0.22.0)
